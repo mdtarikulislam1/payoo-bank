@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- tailwind add -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- daisy ui add -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    
+
+<body class="bg-slate-100 flex">
+    <header class="lg:max-w-md w-11/12 mx-auto mb-32">
+        <section class="max-w-md mx-auto">
+            <div class="flex justify-center items-center mt-56">
+                <img class="relative" src="image/bg.png" alt="">
+                <img class="absolute mb-36" src="image/Group.png" alt="">
+            </div>
+            <!-- login form -->
+            <section class="w-full">
+                <div class="card bg-base-100 w-full max-w-md shrink-0 shadow-2xl">
+                    <form class="card-body">
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="font-semibold text-lg">Mobile number</span>
+                            </label>
+                            <input id="input-number" type="number" placeholder="enter your number" class="input input-bordered rounded-3xl bg-slate-100"
+                                required />
+                        </div>
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="font-semibold text-lg">4 Digit pin</span>
+                            </label>
+                            <input id="input-password" type="password" placeholder="password" class="input input-bordered rounded-3xl bg-slate-100" required />
+                            <!-- <label class="label">
+                  <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                </label> -->
+                        </div>
+                        <div class="form-control mt-6">
+                            <button id="login-btn"
+                                class="bg-blue-700 py-3 text-white font-semibold text-xl rounded-3xl">Login</button>
+                        </div>
+                    </form>
+                </div>
+                </div>
+            </section>
+        </section>
+    </header>
+    <script src="login.js"></script>
 </body>
+
 </html>
