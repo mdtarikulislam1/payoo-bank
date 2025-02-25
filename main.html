@@ -1,13 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- daisy ui add -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>
-        yess
-    </h1>
+
+<body class="bg-slate-100 min-h-screen">
+    <!-- header icon and btn log out -->
+    <header class="border-b-2">
+        <section class="lg:w-8/12 mx-auto flex lg:justify-between justify-center items-center lg:gap-40 gap-8">
+            <nav class="flex justify-center py-10 lg:gap-4">
+                <div>
+                    <img src="image/Group.png" alt="">
+                </div>
+                <div>
+                    <h1 class="font-extrabold lg:text-2xl text-xl">$450000</h1>
+                    <h5>available balance</h5>
+                </div>
+            </nav>
+            <button class="bg-white border px-8 py-2 rounded-lg">log out</button>
+        </section>
+    </header>
+    <!-- main section -->
+    <main class="lg:w-8/12 mx-auto mt-10 w-11/12">
+        <section>
+            <h3 class="font-bold text-3xl pb-6">welcome to payoo!</h3>
+            <p class="lg:text-lg">Enjoy easy and convenient financial services with us. <br> Cashout charge is low and
+            </p>
+        </section>
+        <section class="grid grid-cols-2 lg:grid-cols-3 mt-10 gap-3 py-3">
+            <div class="border rounded-md p-4 text-center">
+                <img class="mx-auto pb-3" src="image/wallet1.png" alt="">
+                <p>Add money</p>
+            </div>
+            <div class="border rounded-md p-4 text-center">
+                <img class="mx-auto pb-3" src="image/send1.png" alt="">
+                <p>Cashout</p>
+            </div>
+            <div class="border rounded-md p-4 text-center">
+                <img class="mx-auto pb-3" src="image/money1.png" alt="">
+                <p>Transfer money</p>
+            </div>
+            <div class="border rounded-md p-4 text-center">
+                <img class="mx-auto pb-3" src="image/bonus1.png" alt="">
+                <p>Get bonus</p>
+            </div>
+            <div class="border rounded-md p-4 text-center">
+                <img class="mx-auto pb-3" src="image/purse1.png" alt="">
+                <p>pay bill</p>
+            </div>
+            <div class="border rounded-md p-4 text-center">
+                <img class="mx-auto pb-3" src="image/transaction1.png" alt="">
+                <p>Transactions</p>
+            </div>
+        </section>
+        <section class="py-10">
+            <h3 class="font-bold text-2xl">Add Money</h3>
+            <div class="hero">
+                <div class=" bg-base-100 w-full max-w-md rounded-lg mt-10 shadow-2xl py-10">
+                    <form class="card-body">
+                        <span class="label-text text-lg">select a bank</span>
+                        <select class="select select-bordered w-full  border-none rounded-2xl bg-slate-100">
+                            <option disabled selected>Normal</option>
+                            <option value="Bkash">Bkash</option>
+                            <option value="Naggad">Naggad</option>
+                            <option value="rocket">rocket</option>
+                          </select>
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text text-lg">bank account number</span>
+                            </label>
+                            <input type="email" placeholder="Enter 11 digit account number" class="input input-bordered rounded-2xl border-none bg-slate-100" required />
+                        </div>
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text text-lg">amount to add</span>
+                            </label>
+                            <input type="password" placeholder="add amount to withdrow" class="input input-bordered rounded-2xl border-none bg-slate-100" required />
+
+                        </div>
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text text-lg">pin number</span>
+                            </label>
+                            <input type="password" placeholder="Enter 4 digit pin number" class="input input-bordered rounded-2xl border-none bg-slate-100" required />
+
+                        </div>
+                        <div class="form-control mt-6">
+                            <button class="btn bg-blue-700 rounded-2xl text-lg btn-primary">Add Money</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
